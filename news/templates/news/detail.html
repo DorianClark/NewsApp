@@ -1,0 +1,15 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'news/style.css' %}">
+
+
+<h1>
+    {{ story.headline_text }}
+</h1>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<h2>
+    {{story.story_text}}
+</h2>
+<h3>
+    {{story.pub_date}}
+</h3>
